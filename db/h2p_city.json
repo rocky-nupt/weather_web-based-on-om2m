@@ -1,0 +1,168 @@
+{
+  "hubei": {
+    "\u5341\u5830": "shiyan",
+    "\u6b66\u6c49": "wuhan",
+    "\u9ec4\u77f3": "huangshi"
+  },
+  "guizhou": {
+    "\u9075\u4e49": "zunyi",
+    "\u8d35\u9633": "guiyang",
+    "\u516d\u76d8\u6c34": "liupanshui"
+  },
+  "xinjiang": {
+    "\u5410\u9c81\u756a": "tulufan",
+    "\u4e4c\u9c81\u6728\u9f50": "wulumuqi",
+    "\u514b\u62c9\u739b\u4f9d": "kelamayi"
+  },
+  "guangxi": {
+    "\u5357\u5b81": "nanning",
+    "\u6842\u6797": "guilin",
+    "\u67f3\u5dde": "liuzhou"
+  },
+  "taiwai": {
+    "\u9ad8\u96c4": "gaoxiong",
+    "\u53f0\u5357": "tainan",
+    "\u53f0\u5317": "taibei"
+  },
+  "xianggang": {
+    "\u9999\u6e2f": "xianggang"
+  },
+  "hebei": {
+    "\u77f3\u5bb6\u5e84": "shijiazhuang",
+    "\u5510\u5c71": "tangshan",
+    "\u79e6\u7687\u5c9b": "qinghuangdao"
+  },
+  "sichuang": {
+    "\u7ef5\u9633": "mianyang",
+    "\u6500\u679d\u82b1": "panzhihua",
+    "\u6210\u90fd": "chengdu"
+  },
+  "shan3xi": {
+    "\u54b8\u9633": "xianyang",
+    "\u897f\u5b89": "xian",
+    "\u5b9d\u9e21": "baoji"
+  },
+  "anhui": {
+    "\u829c\u6e56": "wuhu",
+    "\u5408\u80a5": "hefei",
+    "\u868c\u57e0": "bengbu"
+  },
+  "neimenggu": {
+    "\u5305\u5934": "baotou",
+    "\u547c\u548c\u6d69\u7279": "huhehaote",
+    "\u4e4c\u6d77": "wuhai"
+  },
+  "gansu": {
+    "\u5929\u6c34": "tianshui",
+    "\u5170\u5dde": "lanzhou",
+    "\u9152\u6cc9": "jiuquan"
+  },
+  "henan": {
+    "\u90d1\u5dde": "zhengzhou",
+    "\u5f00\u5c01": "kaifeng",
+    "\u6d1b\u9633": "luoyang"
+  },
+  "qinghai": {
+    "\u6d77\u4e1c": "haidong",
+    "\u897f\u5b81": "xining",
+    "\u6d77\u5317": "haibei"
+  },
+  "shandong": {
+    "\u9752\u5c9b": "qingdao",
+    "\u6d4e\u5357": "jinan",
+    "\u6dc4\u535a": "zibo"
+  },
+  "jiangxi": {
+    "\u4e5d\u6c5f": "jiujiang",
+    "\u5357\u660c": "nanchang",
+    "\u4e0a\u9976": "shangrao"
+  },
+  "beijing": {
+    "\u901a\u5dde": "tongzhou",
+    "\u671d\u9633": "chaoyang",
+    "\u6d77\u6dc0": "haidian"
+  },
+  "guangdong": {
+    "\u73e0\u6d77": "zhuhai",
+    "\u5e7f\u5dde": "guangzhou",
+    "\u6df1\u5733": "shenzhen"
+  },
+  "hunan": {
+    "\u682a\u6d32": "zhuzhou",
+    "\u957f\u6c99": "changsha",
+    "\u6e58\u6f6d": "xiangtan"
+  },
+  "xizang": {
+    "\u65e5\u5580\u5219": "rikaze",
+    "\u62c9\u8428": "lasa",
+    "\u660c\u90fd": "changdu"
+  },
+  "chongqing": {
+    "\u6e1d\u4e2d": "yuzhong",
+    "\u5927\u6e21\u53e3": "dadukou",
+    "\u6c5f\u5317": "jiangbei"
+  },
+  "jilin": {
+    "\u5409\u6797": "jilin",
+    "\u957f\u6625": "changchun",
+    "\u56db\u5e73": "siping"
+  },
+  "aomen": {
+    "\u6fb3\u95e8": "aomen"
+  },
+  "jiangsu": {
+    "\u5357\u4eac": "nanjing",
+    "\u5f90\u5dde": "xuzhou",
+    "\u65e0\u9521": "wuxi"
+  },
+  "shanghai": {
+    "\u9759\u5b89": "jingan",
+    "\u5f90\u6c47": "xuhui",
+    "\u9ec4\u6d66": "huangpu"
+  },
+  "hainan": {
+    "\u6d77\u53e3": "haikou",
+    "\u4e09\u6c99": "sansha",
+    "\u4e09\u4e9a": "sanya"
+  },
+  "shan1xi": {
+    "\u5927\u540c": "datong",
+    "\u592a\u539f": "taiyuan",
+    "\u9633\u6cc9": "yangquan"
+  },
+  "zhejiang": {
+    "\u676d\u5dde": "hangzhou",
+    "\u5b81\u6ce2": "ningbo",
+    "\u6e29\u5dde": "wenzhou"
+  },
+  "yunnan": {
+    "\u66f2\u9756": "qujing",
+    "\u6606\u660e": "kunming",
+    "\u4e3d\u6c5f": "lijiang"
+  },
+  "fujian": {
+    "\u6f33\u5dde": "zhangzhou",
+    "\u53a6\u95e8": "xiamen",
+    "\u798f\u5dde": "fuzhou"
+  },
+  "ningxia": {
+    "\u5434\u5fe0": "wuzhong",
+    "\u77f3\u5634\u5c71": "shizuishan",
+    "\u94f6\u5ddd": "yinchuan"
+  },
+  "tianjin": {
+    "\u6cb3\u897f": "hexi",
+    "\u6cb3\u4e1c": "hedong",
+    "\u548c\u5e73": "heping"
+  },
+  "liaoning": {
+    "\u978d\u5c71": "anshan",
+    "\u6c88\u9633": "shenyang",
+    "\u5927\u8fde": "dalian"
+  },
+  "heilongjiang": {
+    "\u9e21\u897f": "jixi",
+    "\u54c8\u5c14\u6ee8": "haerbin",
+    "\u9f50\u9f50\u54c8\u5c14": "qiqihaer"
+  }
+}
