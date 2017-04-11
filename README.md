@@ -12,7 +12,9 @@
 ## 环境要求：
 JAVA 1.7 or later
 ####
+python3.5
+####
 Apache Maven 3 or later
 ####
-python packages:tornado, requests
+python packages: tornado, requests
 
