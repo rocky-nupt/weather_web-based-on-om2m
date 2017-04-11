@@ -1,0 +1,90 @@
+<!--
+  Copyright (c) 2013-2015 LAAS-CNRS (www.laas.fr)
+  7 Colonel Roche 31077 Toulouse - France
+ 
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License v1.0
+  which accompanies this distribution, and is available at
+  http://www.eclipse.org/legal/epl-v10.html
+ 
+  Contributors:
+      Thierry Monteil (Project co-founder) - Management and initial specification,
+          conception and documentation.
+      Mahdi Ben Alaya (Project co-founder) - Management and initial specification,
+          conception, implementation, test and documentation.
+      Khalil Drira - Management and initial specification.
+      Guillaume Garzone - Initial specification, conception, implementation, test
+          and documentation.
+      François Aïssaoui - Initial specification, conception, implementation, test
+          and documentation.	
+-->
+
+<!--
+ Authors:
+    Mahdi Ben Alaya <ben.alaya@laas.fr> <benalaya.mahdi@gmail.com>
+    Marouane El kiasse <melkiasse@laas.fr> <kiasmarouane@gmail.com>
+    Yassine Banouar <ybanouar@laas.fr> <yassine.banouar@gmail.com>
+-->
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>OM2M CSE</title>
+        <link rel="stylesheet" type="text/css" href="om2m.css">
+        <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="om2m.js"></script>
+    </head>
+
+<body>
+    <div id="login">
+        <center>
+        <br/>
+            <img src="om2m-logo.png" height="90"/>
+            <br/>
+            <br/>
+            <table>
+            <tr><td>username: </td><td><input id="username" /></td></tr>
+            <tr><td>password</td><td><input type = "password" id="password" /></td></tr>
+            <tr><td></td><td><button type="button" onclick="login()">Login</button></td></tr>
+            </table>
+        </center>
+    </div>
+    <center>
+        <div id="error"></div>
+    </center>
+    <div id="main">
+    <img src="om2m-logo.png" height="90" style="float: right;">
+    <button type="button" onclick="logout()">Logout</button>
+    <h2>OM2M CSE Resource Tree</h2>
+       <div id="url"></div><br />
+        <div>
+            <div style="float: left; width: 55%; overflow:auto">
+                <div>
+                    <ul class="tree" id="resources"></ul>
+                </div>
+                <br />
+            </div>
+
+            <div style="float: right; width: 43%;">
+                <div>
+                    <table class="bordered" >
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="attributes">
+                        </tbody>
+                    </table>
+                </div>
+                <div id="content">
+
+                </div>
+                <div id="response"></div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

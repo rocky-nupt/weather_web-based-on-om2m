@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2013-2016 LAAS-CNRS (www.laas.fr)
+    7 Colonel Roche 31077 Toulouse - France
+   
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Initial Contributors:
+        Thierry Monteil : Project manager, technical co-manager
+        Mahdi Ben Alaya : Technical co-manager
+        Samir Medjiah : Technical co-manager
+        Khalil Drira : Strategy expert
+        Guillaume Garzone : Developer
+        François Aïssaoui : Developer
+   
+    New contributors :
+ -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>org.eclipse.om2m</artifactId>
+		<groupId>org.eclipse.om2m</groupId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>org.eclipse.om2m.site.asn-cse</artifactId>
+	<packaging>eclipse-repository</packaging>
+	<name>org.eclipse.om2m :: asn product</name>
+	
+	<build>
+ 		<plugins>
+  			<plugin>
+   				<groupId>org.eclipse.tycho</groupId>
+   				<artifactId>tycho-p2-director-plugin</artifactId>
+   				<version>${tycho.version}</version>
+   				<executions>
+    				<execution>
+     					<id>materialize-products</id>
+     					<goals>
+      						<goal>materialize-products</goal>
+     					</goals>
+    				</execution>
+   				</executions>
+  			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.1</version>
+				<executions>
+					<execution>
+						<phase>install</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<echo>Copying scripts into asn product</echo>
+								<copy file="${basedir}/script" tofile="${basedir}/target/products/asn-cse/${osgi.os}/${osgi.ws}/${osgi.arch}/start.sh"/>
+								<copy file="${basedir}/script" tofile="${basedir}/target/products/asn-cse/${osgi.os}/${osgi.ws}/${osgi.arch}/start.bat"/>
+								<copy file="${basedir}/log4j.configuration" tofile="${basedir}/target/products/asn-cse/${osgi.os}/${osgi.ws}/${osgi.arch}/log4j.configuration"/>
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+ 		</plugins>
+ 	</build>
+ 
+</project>

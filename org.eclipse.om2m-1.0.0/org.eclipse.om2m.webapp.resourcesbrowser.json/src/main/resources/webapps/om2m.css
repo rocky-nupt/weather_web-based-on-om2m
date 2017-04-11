@@ -1,0 +1,148 @@
+/*******************************************************************************
+ * Copyright (c) 2013-2015 LAAS-CNRS (www.laas.fr)
+ * 7 Colonel Roche 31077 Toulouse - France
+ *
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     Thierry Monteil (Project co-founder) - Management and initial specification,
+ *         conception and documentation.
+ *     Mahdi Ben Alaya (Project co-founder) - Management and initial specification,
+ *         conception, implementation, test and documentation.
+ *     Khalil Drira - Management and initial specification.
+ *     Guillaume Garzone - Initial specification, conception, implementation, test
+ *         and documentation.
+ *     François Aïssaoui - Initial specification, conception, implementation, test
+ *         and documentation.
+ ******************************************************************************/
+
+body {
+    width: 95%;
+    margin: 0px auto;
+    font-family: 'trebuchet MS', 'Lucida sans', Arial;
+    font-size: 14px;
+    color: #444;
+    padding-top: 10px;
+}
+
+.bordered {
+    border: solid #ccc 1px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.bordered tr:hover {
+    background: #fbf8e9;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.bordered td, .bordered th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+}
+
+.bordered th {
+    background-color: #dce9f9;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+li:hover {
+color:red;
+text-decoration:none;
+}
+
+li:active {
+   color:blue;
+   font-weight: bold;
+}
+
+ul {
+margin: 0 0 0 0;
+   color:black;
+}
+
+.tree, .tree ul {
+  font: normal normal 20px/30px Helvetica, Arial, sans-serif;
+  list-style-type: none;
+  margin-left: 0 0 0 10px;
+  position: relative;
+  overflow:hidden;
+}
+
+.tree li {
+  margin: 0;
+  padding: 0 5px;
+  position: relative;
+}
+
+.tree li::before, .tree li::after {
+  content: '';
+  position: absolute;
+  left: -10px;
+}
+
+/* horizontal line on inner list items */
+.tree li::before {
+  border-top: 1px solid #999;
+  top: 15px;
+  width: 10px;
+  height: 0;
+}
+
+/* vertical line on list items */
+.tree li:after {
+  border-left: 1px solid #999;
+  height: 100%;
+  width: 0px;
+  top: -15px;
+}
+
+/* lower line on list items from the first level because they don't have parents */
+.tree > li::after {
+  top: 10px;
+}
+
+/* hide line from the last of the first level list items */
+.tree > li:last-child::after {
+  display: none;
+}
+
+#url {
+    font-size: 20px;
+    color: #0036C2;
+}
+
+th {
+    color: #0036C2;
+    text-align: center;
+}
+
+li {
+    cursor: pointer;
+}s
+#login table {
+     border-width:1px;
+     border-style:solid;
+     border-color:black;
+}
+#login button {
+    float: right;
+}

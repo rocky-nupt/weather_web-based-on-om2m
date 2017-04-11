@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xml-bindings xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/oxm"
+	package-name="org.eclipse.om2m.commons.resource">
+	<java-types>
+
+		<!-- Adaptation for labels array and resource names -->
+
+		<!-- Generic resource -->
+		<java-type name="Resource">
+			<java-attributes>
+				<xml-element java-attribute="labels" name="lbl" />
+			</java-attributes>
+		</java-type>
+
+		<java-type name="RegularResource">
+			<java-attributes>
+				<xml-element java-attribute="accessControlPolicyIDs"
+					name="acpi" />
+			</java-attributes>
+		</java-type>
+
+		<!-- CSE Descriptions -->
+		<java-type name="CSEBase">
+			<xml-root-element name="m2m:cb" />
+			<java-attributes>
+				<xml-element java-attribute="accessControlPolicyIDs"
+					name="acpi" />
+				<xml-element java-attribute="supportedResourceType"
+					name="srt" />
+				<xml-element java-attribute="pointOfAccess" name="poa" />
+			</java-attributes>
+		</java-type>
+
+		<java-type name="RemoteCSE">
+			<xml-root-element name="m2m:csr" />
+		</java-type>
+
+		<!-- Access Control resources -->
+		<java-type name="AccessControlPolicy">
+			<xml-root-element name="m2m:acp" />
+		</java-type>
+		<java-type name="AccessControlRule">
+			<java-attributes>
+				<xml-element java-attribute="accessControlOriginators"
+					name="acor" />
+			</java-attributes>
+		</java-type>
+
+		<!-- Common resources -->
+		<java-type name="AE">
+			<xml-root-element name="m2m:ae" />
+			<java-attributes>
+				<xml-element java-attribute="pointOfAccess" name="poa" />
+			</java-attributes>
+		</java-type>
+
+		<java-type name="Container">
+			<xml-root-element name="m2m:cnt" />
+		</java-type>
+
+		<java-type name="ContentInstance">
+			<xml-root-element name="m2m:cin" />
+		</java-type>
+
+		<java-type name="Group">
+			<xml-root-element name="m2m:grp" />
+			<java-attributes>
+				<xml-element java-attribute="memberIDs" name="mid" />
+				<xml-element java-attribute="membersAccessControlPolicyIDs"
+					name="macp" />
+			</java-attributes>
+		</java-type>
+
+		<java-type name="Node">
+			<xml-root-element name="m2m:nod" />
+		</java-type>
+
+		<!-- Subscription and notification handling -->
+
+		<java-type name="Subscription">
+			<xml-root-element name="m2m:sub" />
+			<java-attributes>
+				<xml-element java-attribute="notificationURI" name="nu" />
+			</java-attributes>
+		</java-type>
+
+		<java-type name="Notification">
+			<xml-root-element name="m2m:sgn" />
+		</java-type>
+
+		<!-- TODO Mgmt Objects -->
+
+		<!-- Other resources -->
+
+        <java-type name="URIList">
+            <xml-root-element name="m2m:uril"/>
+        </java-type>
+
+		<java-type name="PollingChannel">
+			<xml-root-element name="m2m:pch" />
+		</java-type>
+
+		<java-type name="Schedule">
+			<xml-root-element name="m2m:sch" />
+		</java-type>
+
+		<java-type name="LocationRegion">
+			<java-attributes>
+				<!-- TODO Short name for countryCode -->
+				<xml-element java-attribute="countryCode" />
+				<!-- TODO Short name for circRegion -->
+				<xml-element java-attribute="circRegion" />
+			</java-attributes>
+		</java-type>
+
+	</java-types>
+
+</xml-bindings>

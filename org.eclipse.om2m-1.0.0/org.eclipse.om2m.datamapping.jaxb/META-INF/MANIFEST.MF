@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.eclipse.om2m DataMapper JAXB XML
+Bundle-SymbolicName: org.eclipse.om2m.datamapping.jaxb
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.eclipse.om2m.datamapping.jaxb.Activator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.om2m.commons
+Import-Package: org.apache.commons.logging,
+ org.eclipse.om2m.datamapping.service,
+ org.eclipse.persistence.jaxb,
+ org.osgi.framework,
+ org.osgi.util.tracker

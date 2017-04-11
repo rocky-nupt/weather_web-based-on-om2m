@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product uid="in-cse" version="1.0.0" useFeatures="false" includeLaunchers="false">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-console -noExit --launcher.secondThread
+      </programArgs>
+      <vmArgs>-ea  -Declipse.ignoreApp=true -Dosgi.clean=true -Ddebug=true
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <launcher name="in-cse">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</linux>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</windows>
+   </vm>
+
+   <plugins>
+      <plugin id="javax.servlet"/>
+      <plugin id="javax.xml"/>
+      <plugin id="org.apache.commons.codec"/>
+      <plugin id="org.apache.commons.logging"/>
+      <plugin id="org.apache.felix.gogo.command"/>
+      <plugin id="org.apache.felix.gogo.runtime"/>
+      <plugin id="org.apache.felix.gogo.shell"/>
+      <plugin id="org.apache.httpcomponents.httpclient"/>
+      <plugin id="org.apache.httpcomponents.httpcore"/>
+      <plugin id="org.eclipse.equinox.console"/>
+      <plugin id="org.eclipse.equinox.http.jetty"/>
+      <plugin id="org.eclipse.equinox.http.servlet"/>
+      <plugin id="org.eclipse.equinox.launcher"/>
+      <plugin id="org.eclipse.jetty.continuation"/>
+      <plugin id="org.eclipse.jetty.http"/>
+      <plugin id="org.eclipse.jetty.io"/>
+      <plugin id="org.eclipse.jetty.security"/>
+      <plugin id="org.eclipse.jetty.server"/>
+      <plugin id="org.eclipse.jetty.servlet"/>
+      <plugin id="org.eclipse.jetty.util"/>
+      <plugin id="org.eclipse.om2m.binding.coap"/>
+      <plugin id="org.eclipse.om2m.binding.http"/>
+      <plugin id="org.eclipse.om2m.binding.service"/>
+      <plugin id="org.eclipse.om2m.commons"/>
+      <plugin id="org.eclipse.om2m.commons.logging" fragment="true"/>
+      <plugin id="org.eclipse.om2m.core"/>
+      <plugin id="org.eclipse.om2m.core.service"/>
+      <plugin id="org.eclipse.om2m.datamapping.jaxb"/>
+      <plugin id="org.eclipse.om2m.datamapping.service"/>
+      <plugin id="org.eclipse.om2m.persistence.eclipselink"/>
+      <plugin id="org.eclipse.om2m.persistence.service"/>
+      <plugin id="org.eclipse.om2m.webapp.resourcesbrowser.xml"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+   </plugins>
+
+   <configurations>
+      <plugin id="org.apache.felix.gogo.command" autoStart="true" startLevel="0" />
+      <plugin id="org.apache.felix.gogo.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.apache.felix.gogo.shell" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.console" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.http.jetty" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.om2m.binding.coap" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.om2m.binding.http" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.om2m.core" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.om2m.datamapping.jaxb" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.om2m.persistence.eclipselink" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.om2m.webapp.resourcesbrowser.xml" autoStart="true" startLevel="4" />
+      <property name="log4j.configuration" value="file:./log4j.configuration" />
+      <property name="org.apache.commons.logging.Log" value="org.apache.commons.logging.impl.Log4JLogger" />
+      <property name="org.eclipse.equinox.http.jetty.http.port" value="8080" />
+      <property name="org.eclipse.om2m.adminRequestingEntity" value="admin:admin" />
+      <property name="org.eclipse.om2m.coap.port" value="5683" />
+      <property name="org.eclipse.om2m.cseBaseAddress" value="127.0.0.1" />
+      <property name="org.eclipse.om2m.cseBaseContext" value="/" />
+      <property name="org.eclipse.om2m.cseBaseId" value="in-cse" />
+      <property name="org.eclipse.om2m.cseBaseName" value="in-name" />
+      <property name="org.eclipse.om2m.cseBaseProtocol.default" value="http" />
+      <property name="org.eclipse.om2m.cseType" value="IN-CSE" />
+      <property name="org.eclipse.om2m.dbDriver" value="org.h2.Driver" />
+      <property name="org.eclipse.om2m.dbPassword" value="om2m" />
+      <property name="org.eclipse.om2m.dbReset" value="false" />
+      <property name="org.eclipse.om2m.dbUrl" value="jdbc:h2:./database/indb" />
+      <property name="org.eclipse.om2m.dbUser" value="om2m" />
+      <property name="org.eclipse.om2m.globalContext" value="" />
+      <property name="org.eclipse.om2m.guestRequestingEntity" value="guest:guest" />
+      <property name="org.eclipse.om2m.m2mSpId" value="om2m.org" />
+      <property name="org.eclipse.om2m.resource.idseparator" value="-" />
+      <property name="org.eclipse.om2m.webInterfaceContext" value="/webpage" />
+   </configurations>
+
+</product>

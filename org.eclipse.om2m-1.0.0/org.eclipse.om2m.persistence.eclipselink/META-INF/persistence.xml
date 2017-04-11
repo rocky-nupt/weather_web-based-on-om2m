@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2013-2016 LAAS-CNRS (www.laas.fr)
+    7 Colonel Roche 31077 Toulouse - France
+   
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Initial Contributors:
+        Thierry Monteil : Project manager, technical co-manager
+        Mahdi Ben Alaya : Technical co-manager
+        Samir Medjiah : Technical co-manager
+        Khalil Drira : Strategy expert
+        Guillaume Garzone : Developer
+        François Aïssaoui : Developer
+   
+    New contributors :
+ -->
+
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence">
+
+	<persistence-unit name="om2mdb" transaction-type="RESOURCE_LOCAL">
+
+		<!-- Classes to include in database -->
+		<!-- TODO -->
+		<class>org.eclipse.om2m.commons.entities.AccessControlContextEntity</class>
+		<class>org.eclipse.om2m.commons.entities.AccessControlOriginatorEntity</class>
+		<class>org.eclipse.om2m.commons.entities.AccessControlPolicyEntity</class>
+		<class>org.eclipse.om2m.commons.entities.AccessControlRuleEntity</class>
+		<class>org.eclipse.om2m.commons.entities.AeEntity</class>
+		<class>org.eclipse.om2m.commons.entities.AeAnncEntity</class>
+		<class>org.eclipse.om2m.commons.entities.AreaNwkDeviceInfoEntity</class>
+		<class>org.eclipse.om2m.commons.entities.AreaNwkInfoEntity</class>
+		<class>org.eclipse.om2m.commons.entities.CSEBaseEntity</class>
+		<class>org.eclipse.om2m.commons.entities.ContainerEntity</class>
+		<class>org.eclipse.om2m.commons.entities.ContainerAnncEntity</class>
+		<class>org.eclipse.om2m.commons.entities.ContentInstanceEntity</class>
+		<class>org.eclipse.om2m.commons.entities.GroupEntity</class>
+		<class>org.eclipse.om2m.commons.entities.LabelEntity</class>
+		<class>org.eclipse.om2m.commons.entities.NodeEntity</class>
+		<class>org.eclipse.om2m.commons.entities.PollingChannelEntity</class>
+		<class>org.eclipse.om2m.commons.entities.RemoteCSEEntity</class>
+		<class>org.eclipse.om2m.commons.entities.RemoteCseAnncEntity</class>
+		<class>org.eclipse.om2m.commons.entities.RequestEntity</class>
+		<class>org.eclipse.om2m.commons.entities.ScheduleEntity</class>
+		<class>org.eclipse.om2m.commons.entities.SubscriptionEntity</class>
+		<class>org.eclipse.om2m.commons.entities.UriMapperEntity</class>
+
+		<properties>
+			<!-- Actions performed at the start of the platform -->
+			<!-- <property name="eclipselink.ddl-generation" value="drop-and-create-tables" 
+				/> -->
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="database" />
+			<!-- <property name="eclipselink.jdbc.batch-writing" value="JDBC"/> -->
+			<!-- <property name="eclipselink.persistence-context.persist-on-commit" 
+				value="false" /> -->
+
+			<!-- configure the database on startup to avoid costing first operation -->
+			<property name="eclipselink.deploy-on-startup" value="true" />
+			<property name="eclipselink.logging.level" value="WARNING" />
+<!-- 			<property name="eclipselink.cache.shared.default" value="false"/> -->
+		</properties>
+	</persistence-unit>
+
+</persistence>

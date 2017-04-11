@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: IPE Sample
+Bundle-SymbolicName: org.eclipse.om2m.ipe.sample
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.eclipse.om2m.ipe.sample.Activator
+Require-Bundle: org.eclipse.om2m.commons
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.apache.commons.logging,
+ org.eclipse.om2m.core.service,
+ org.eclipse.om2m.interworking.service,
+ org.osgi.framework,
+ org.osgi.util.tracker

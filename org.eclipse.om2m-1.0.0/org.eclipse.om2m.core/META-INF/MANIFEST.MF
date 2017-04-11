@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.eclipse.om2m Core Plugin
+Bundle-SymbolicName: org.eclipse.om2m.core;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.eclipse.om2m.core.Activator
+Require-Bundle: org.eclipse.om2m.commons
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Import-Package: org.apache.commons.logging,
+ org.eclipse.om2m.binding.service,
+ org.eclipse.om2m.core.service,
+ org.eclipse.om2m.datamapping.service,
+ org.eclipse.om2m.interworking.service,
+ org.eclipse.om2m.persistence.service,
+ org.eclipse.om2m.persistence.service.util,
+ org.osgi.framework,
+ org.osgi.util.tracker
