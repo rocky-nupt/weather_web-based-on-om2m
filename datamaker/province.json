@@ -1,0 +1,8 @@
+ {
+   "m2m:ae": {
+     "api": "app-sensor",
+     "rr": "false",
+     "lbl": ["Type/sensor", "Category/temperature", "Location/province"],
+     "rn": "neimenggu"
+   }
+ }
