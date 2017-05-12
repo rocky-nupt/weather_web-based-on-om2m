@@ -18,3 +18,12 @@ Apache Maven 3 or later
 ####
 python packages: tornado, requests
 
+## 示例
+<https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m1.png>
+
+
+<https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m2.png>
+
+
+<https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m3.png>
+
