@@ -20,7 +20,7 @@ python packages: tornado, requests
 
 ## 示例
 <<<<<<< HEAD
-<https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m1.png>
+<image src=https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m1.png>
 
 
 <https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m2.png>
