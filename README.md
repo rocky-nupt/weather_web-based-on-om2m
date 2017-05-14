@@ -25,4 +25,4 @@ python packages: tornado, requests
 <image src=https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m2.png>
 
 
-<image src=https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m3.png>
+<image src=https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m3.png width='720' height='480'>
