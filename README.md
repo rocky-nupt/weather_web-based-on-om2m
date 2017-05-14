@@ -19,10 +19,10 @@ Apache Maven 3 or later
 python packages: tornado, requests
 
 ## 示例
-<image src=https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m1.png>
+<image src=https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m1.png />
 
 
-<image src=https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m2.png>
+<image src=https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m2.png />
 
 
-<image src=https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m3.png width='720' height='480'>
+<image src=https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m3.png width='480' height='960' align=center />
