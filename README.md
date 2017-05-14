@@ -19,6 +19,7 @@ Apache Maven 3 or later
 python packages: tornado, requests
 
 ## 示例
+<<<<<<< HEAD
 <https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m1.png>
 
 
@@ -27,3 +28,8 @@ python packages: tornado, requests
 
 <https://github.com/rocky-nupt/weather_web-based-on-om2m/raw/master/pic/om2m3.png>
 
+=======
+![image 1](//home/rocky/weather_web-based-on-om2m/pic/om2m1.png)
+![image 2](//home/rocky/weather_web-based-on-om2m/pic/om2m2.png)
+![image 3](//home/rocky/weather_web-based-on-om2m/pic/om2m3.png)
+>>>>>>> b4cd260b3f7ee42559a5a45f7d2baf7db48c7330
