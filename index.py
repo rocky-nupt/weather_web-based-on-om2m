@@ -3,8 +3,7 @@
 import tornado.ioloop
 import tornado.web
 import json
-import requests
-import datetime
+from cache import MemClient
 from location import locate
 from retrieve import getdata_fromiot, data_set
 from models2web import Data2web
@@ -20,6 +19,7 @@ def initial(myprovince_han, mycity_han):
     myprovince_pin = h2p_province[myprovince_han]
     mycity_pin = h2p_city[myprovince_pin][mycity_han]
     data = data2web(myprovince_pin, mycity_pin, myprovince_han, mycity_han)
+    MC.set(myprovince_han + mycity_han, data)
     return data
 
 
@@ -41,9 +41,12 @@ def data2web(province_pin, city_pin, province_han, city_han):
 # 定位、初始化
 myprovince_han, mycity_han = locate()
 data = initial(myprovince_han, mycity_han)
+MC = MemClient()
+MC.set(myprovince_han + mycity_han, data)
 
 
 class MainHandler(tornado.web.RequestHandler):
+
     def get(self):
         self.render('index.html')
 
@@ -53,12 +56,16 @@ class MainHandler(tornado.web.RequestHandler):
 
 
 class ChangeHandler(tornado.web.RequestHandler):
+
     def post(self, *args, **kwargs):
         province = self.get_argument('province')
         city = self.get_argument('city')
         print(province, city)
         if province == '浙江' and city == '杭州':
-            data_change = initial(province, city)
+            try:
+                data_change = MC.get(province + city)
+            except Exception:
+                data_change = initial(province, city)
             print(data_change)
             self.write(data_change)
 
